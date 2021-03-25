@@ -1,0 +1,100 @@
+body {
+    background: crimson;
+  }
+  
+  .chat {
+    position: absolute;
+    height: 600px;
+    width: 300px;
+  
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  li {
+    position: relative;
+    content: ();
+    min-height: 50px;
+    width: 200px;
+    padding: 13px;
+    margin: 20px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    list-style-type: none;
+    box-sizing: border-box;
+    color: cornsilk;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .chat li:nth-child(even):before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 185px;
+    width: 10px;
+    height: 10px;
+    border-top: 15px solid yellowgreen;
+    border-left: 15px solid yellowgreen;
+    transform: rotate(-45deg);
+  }
+  
+  .chat li:nth-child(odd)::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 185px;
+    width: 10px;
+    height: 10px;
+    border-top: 15px solid yellowgreen;
+    border-left: 15px solid yellowgreen;
+    transform: rotate(135deg);
+  }
+  
+  .chat li:nth-child(even)::after {
+    position: absolute;
+    right: 250px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid black;
+    background-image: url(https://fsb.zobj.net/crop.php?r=pDohShlpRJHAeXjKUn_76ri-BvWciCXDLrHmkFv09TQ0TYYXsaBZyhC3ryo-40o8lVaWwJc1_PvQDHZBaTluSHiZ7KFwMD_F2CdrokoiCdcBp6EtOqLk534rPW-sQp_2Oe6Km8YOzu848q8s);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .chat li:nth-child(odd)::before {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid black;
+    background-image: url(https://fsa.zobj.net/crop.php?r=99sjI5lXhiMxZR2iPp9DJTtHN9EDYKNlV1aewo6Ip88pmubF1jlb-T4fjSPuUMoAYuTQIElaiXAyc5cGz6USmDemBqVMVWMKVfdQLdoBBT3zJmhnpeiz1GUGY66JUJi9BJqnlfOh1ySdo96K);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  li:nth-child(even) {
+    transform: translateX(60px);
+  }
+  
+  li:nth-child(odd):hover {
+    transform: translateX(-20px);
+  }
+  li:nth-child(even):hover {
+    transform: translateX(80px);
+  }
+  
